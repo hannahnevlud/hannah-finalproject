@@ -1,17 +1,20 @@
 {% extends '_layouts/base.njk' %}
 
+{% block page_title%}{{members.slug}}{%endblock%}
+
+
 {% block content %}
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-    {{members.image}}
-      <h3>{{members.name}}</h3>
-      <h4>{{members.instruments}}</h4>
-      <h4>{{members.tenure}}</h4>
-      <h4>{{members.birthplace}}</h4>
-      <h4>{{members.birthdate}}</h4>
+      <img src="img/queen-photos/members/{{members.image}}" class="img-fluid" alt="Responsive image">
     </div>
     <div class="col-sm-8">
+    <h3>{{members.name}}</h3>
+      <h4>Intruments:{{members.instruments}}</h4>
+      <h4>Years in band:{{members.tenure}}</h4>
+      <h4>Birthplace:{{members.birthplace}}</h4>
+      <h4>Born:{{members.birthdate}}</h4>
       <p>{{members.text | safe}}</p>
     </div>
   </div>

@@ -24,4 +24,20 @@
 @import "carousel";
 @import "card";
 
+h1 {
+  font-family: 'Rock Salt', cursive;
+}
 
+.parallax-two {
+  /* The image used */
+  background-image: url("../img/queen-photos/queen-band-wallpaper.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
